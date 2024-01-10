@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Resources/CSS/rep.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://api.fontshare.com/v2/css?f[]=author@501,400,500,200,301,601,600,300,700,201,701,401&display=swap" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="top">
+        <div class="logo">
+          <i class="bx bxl-codepen"></i>
+          <span>Charge up</span>
+        </div>
+        <i class="bx bx-menu" id="btn"></i>
+      </div>
+      <ul>
+        <li>
+          <a href="dash.html">
+            <i class="bx bxs-grid-alt"></i>
+            <span class="nav-item">Dashboard</span>
+          </a>
+          <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+          <a href="course.html">
+            <i class="bx bx-book-open"></i>
+            <span class="nav-item">Courses</span>
+          </a>
+          <span class="tooltip">Courses</span>
+        </li>
+        <li>
+          <a href="rep.html">
+            <i class="bx bxs-report"></i>
+            <span class="nav-item">Report</span>
+          </a>
+          <span class="tooltip">Report</span>
+        </li>
+        <li>
+          <a href="cert.html">
+            <i class="bx bx-certification"></i>
+            <span class="nav-item">Certificate</span>
+          </a>
+          <span class="tooltip">Certificate</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-cog"></i>
+            <span class="nav-item">Settings</span>
+          </a>
+          <span class="tooltip">Settings</span>
+        </li>
+        <li>
+          <a href="#">
+            <i class="bx bx-log-out"></i>
+            <span class="nav-item">Logout</span>
+          </a>
+          <span class="tooltip">Logout</span>
+        </li>
+      </ul>
+    </div>
+    <section class="main-content">
+        <div class="first">
+          <h1>Report</h1>
+          <form class="searchbar">
+            <span class="material-symbols-outlined">search</span>
+            <input type="text" placeholder="Search..." />
+          </form>
+        </div>
+    <img src="Resources/assets/Rectangle 28.png" />
+    <div class="mid">
+    <p>Mon</p> <p>Tue</p> <p>Wed</p> <p>Thur</p> <p>Fri</p> <p>Sat</p> <p>Sun</p>
+    </div>
+    <div class="colours">
+    <p class="py">Python</p> <p class="ja">Javascript</p> <p class="C">C++</p> <p class="re">React</p>
+    </div>
+  </body>
+  <script>
+    let btn = document.querySelector("#btn");
+    let sidebar = document.querySelector(".sidebar");
+
+    btn.onclick = function () {
+      sidebar.classList.toggle("active");
+    };
+  </script>
+</html>

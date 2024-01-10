@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(to right, white 50%, #363fc3 50%);
+  font-family: "Author", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+p {
+  color: gray;
+}
+.text {
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+form {
+  margin-left: 3rem;
+}
+input[type="email"],
+input[type="password"] {
+  background-color: #f0f1ff;
+  border: 1px solid #f0f1ff;
+  border-radius: 5px;
+  width: 40%;
+  height: 40px;
+  font-size: 16px;
+}
+input[type="submit"] {
+  background-color: #363fc3;
+  color: white;
+  padding: 10px 50px;
+  width: 40%;
+  font-size: 18px;
+  border: 1px solid #f0f1ff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 10;
+  left: -10;
+  margin-right: 3rem;
+}
+.text-1 {
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom: 2rem;
+  left: 390px;
+}
+.text-1 p {
+  color: white;
+}

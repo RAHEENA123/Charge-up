@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Author", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 80px;
+  background-color: #363fc3;
+  padding: 0.4rem 0.8rem;
+  transition: all 0.5s ease;
+}
+.sidebar.active ~ .main-content {
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.sidebar.active {
+  width: 250px;
+}
+.sidebar #btn {
+  position: absolute;
+  color: #fff;
+  top: 0.4rem;
+  left: 50%;
+  font-size: 1.2rem;
+  line-height: 50px;
+  transform: translatex(-50%);
+  cursor: pointer;
+}
+.sidebar.active #btn {
+  left: 90%;
+}
+.sidebar .top .logo {
+  color: #fff;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+}
+.sidebar.active .top .logo {
+  opacity: 1;
+}
+.top .logo i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+.bold {
+  font-weight: 600;
+}
+.sidebar p {
+  opacity: 0;
+}
+.sidebar.active p {
+  opacity: 1;
+}
+.sidebar ul li {
+  position: relative;
+  list-style-type: none;
+  height: 50px;
+  width: 90%;
+  margin: 0.8rem auto;
+  line-height: 50px;
+}
+.sidebar ul li a {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 0.8rem;
+}
+.sidebar ul li a:hover {
+  background-color: #fff;
+  color: #12171e;
+}
+.sidebar ul li a i {
+  min-width: 50px;
+  text-align: center;
+  height: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+}
+.sidebar .nav-item {
+  opacity: 0;
+}
+.sidebar.active .nav-item {
+  opacity: 1;
+}
+.sidebar ul li .tooltip {
+  position: absolute;
+  left: 125px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.6rem;
+  padding: 0.4rem 1.2rem;
+  line-height: 1.8rem;
+  z-index: 20;
+  opacity: 0;
+}
+.sidebar ul li:hover .tooltip {
+  opacity: 1;
+}
+.sidebar.active ul li .tooltip {
+  display: none;
+}
+.main-content {
+  position: relative;
+  background-color: #eee;
+  min-height: 100vh;
+  top: 0;
+  left: 80px;
+  transition: all 0.5s ease;
+  width: calc(100% - 80px);
+  padding: 1rem;
+}
+.first {
+  display: flex;
+  justify-content: space-between;
+}
+.first h1 {
+  float: left;
+}
+.first input[type="text"] {
+  display: flex;
+  justify-content: space-between;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.searchbar .material-symbols-outlined {
+  color: #fff;
+  background-color: black;
+  padding-top: 6px;
+  position: absolute;
+  right: 0;
+  top: 1px;
+  left: 127px;
+}
+.info-box {
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
+.info-box ul {
+  align-items: center;
+  padding-left: 0;
+  margin-top: 0;
+}
+.info-box li {
+  float: left;
+  list-style-type: none;
+  width: 150px;
+}
+.info-box li a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  width: 100%;
+  line-height: 3;
+  color: black;
+  text-align: center;
+}
+.info-box li a:hover {
+  color: #363fc3;
+}
+.info-box li a:focus {
+  color: #363fc3;
+}
+.info-box li a:active {
+  color: #363fc3;
+}
+.panels {
+  height: 100%;
+  position: relative;
+  clear: both;
+}
+.info-box article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 900px;
+  padding: 10px;
+  color: black;
+  background-color: #eee;
+  width: 100%;
+  padding-bottom: 500px;
+}
+.info-box .active-panel {
+  z-index: 1;
+  background-color: #eee;
+}
+.divvv {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+  gap: 70px;
+  background-color: #eee;
+}
+.box-2 {
+  width: 301px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.055),
+    0 6px 20px 0 rgba(0, 0, 0, 0.055);
+  border-radius: 0.6rem;
+}
+.box-2 img {
+  border-top-right-radius: 0.6rem;
+  border-top-left-radius: 0.6rem;
+}
+.container-2 {
+  padding: 10px;
+  line-height: 26px;
+}
+.container-2 .on {
+  margin-top: 5px;
+}
+.straight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.straight span {
+  font-size: 20px;
+}
+.straight p {
+  display: inline;
+  margin-right: 15px;
+}
